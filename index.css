@@ -169,6 +169,9 @@ nav ul li a:hover::after{
     margin-right: 120px;
 }
 
+#purpose-text{
+    margin-top: 10px;
+}
 .line-2{
     position: absolute;
     width: 800.18px;
@@ -192,6 +195,7 @@ nav ul li a:hover::after{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 7px;
 }
 
 .text-2{
@@ -417,3 +421,138 @@ nav ul li a:hover::after{
 .bottom a{
     margin-right: 80px;
 }
+
+/*-----Responsiveness---------*/
+
+.fa-solid.fa-circle-xmark{
+    display: none;
+}
+
+.fa-solid.fa-bars{
+    display: none;
+}
+
+@media only screen and  (max-width: 600px){
+    .fa-solid.fa-bars{
+        display: block;
+        font-size: 20px;
+        left: 80px;
+        color: #fff;
+    }
+
+    .fa-solid.fa-circle-xmark{
+        display: block;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .btn-1{
+        display: none;
+    }
+
+    .header-text{
+        margin-top: 30%;
+        font-size: 12.5px;
+    }
+
+    .btn-2{
+        color: #fff;
+        background-color: #6495ED;
+        border: 2px solid #6495ED;
+        border-radius: 3px;
+        padding:4px 6px;
+        font-weight: 600;
+        font-size: 13px;
+        cursor: pointer;
+        margin-top: 3%;
+        left: 100%;
+        margin-left: 5%;
+    }
+    
+    .nav ul{
+        background: #004b99;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-right: 40px;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.8s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 20px;
+    }
+
+    nav ul .fa-solid.fa-circle-xmark{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .fa-solid.fa-magnifying-glass{
+        font-size: 17px;
+        color: #fff;
+        cursor: pointer;
+        margin-left: 190px;
+    }
+
+    .logo{
+        height: 35px;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    .line-1{
+        position: absolute;
+        width: 250.18px;
+        height: 0px;
+        left: 17%;
+        top: 103%;
+        border: 1px solid #A98A75;
+    }
+
+    .line-2{
+        position: absolute;
+        width: 250.18px;
+        height: 0px;
+        left: 15%;
+        top: 171%;
+        border: 1px solid #A98A75;
+    }
+}
+    .col-1 img{
+        margin-top: 30px;
+        width: 270px;
+        height: 170px;
+        margin-left:0%;
+    }
+
+    .col-2{
+        flex-basis: 85%;
+    }
+    
+    .col-2 {
+        margin-top: 10px;
+        margin-right: 0%;
+        font-size: 12px;
+    }
+
+    #text-pur{
+        font-size: 12px;
+        margin-top: 1px;
+    }
+
+    .subtitle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+    }
+    
+
+

@@ -14,7 +14,7 @@
         <div id="header">
             <div>
                 <nav>
-                    <span class="nav">
+                    <div class="nav">
                         <img src="assets/Logo.png" class="logo">
                         <ul id="sidemenu">
                             <li><a href="#WWA">WHO WE ARE</a></li>
@@ -22,10 +22,12 @@
                             <li><a href="#WWW">WHERE WE WORK</a></li>
                             <li><a href="#NS">NEWS & STORIES</a></li>
                             <li><a href="#UE">UPCOMING EVENT</a></li>
+                            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
                         </ul>
                         <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
                         <input type="button" value="DONATE" class="btn-1">
-                    </span>
+                    </div>
                 </nav>
                 <div class="header-text">
                     <h1>Empowering the <span style="color:#6495ED;">needy</span> <br> in the society for development <br> and meaningful future</h1>
@@ -40,8 +42,8 @@
                     <hr class="line-1">
                     <div class="col-1"><img src="assets/purpose.png"></div>
                     <div class="col-2">
-                        <h2 style="color:#6495ED;">Our Purpose</h2>
-                        <p style="margin-top:20px;">MHI was started to create a world where a child’s
+                        <h2 style="color:#6495ED;" id="pur">Our Purpose</h2>
+                        <p style="margin-top:20px;" id="text-pur">MHI was started to create a world where a child’s
                             future is not bound by circumstances (disability, status,
                             race, gender or otherwise).
                             <br> <br>
@@ -165,5 +167,17 @@
         <div class="bottom"><span style="color: #fff;">All rights reserved | Mercy House Initiative</span>
         <a href="#" style="color: #fff;">www.heritageassembly.net</a></div>
     </div>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemenu.style.right = "0"
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+    </script>
 </body>
 </html>
