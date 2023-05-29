@@ -46,7 +46,8 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0 5%;
+    margin: 0% 5%;
+    padding: 0.7%;
 }
 
 nav ul li{
@@ -164,6 +165,7 @@ nav ul li a:hover::after{
 .col-2 {
     margin-top: 2%;
     margin-right: 12%;
+    text-align: justify;
 }
 .line-2{
     width: 60%;

@@ -31,5 +31,63 @@
     color: #fff;
     text-align: center;
     display: inline;
-    padding: 0.3%;
+    padding: 0%;
 }
+
+.fa-solid.fa-angle-right{
+    margin: 0.3%;
+}
+
+.colum{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col-3{
+    margin-top: 3%;
+    margin-left: 0%;
+}
+
+.col-4{
+    flex-basis: 41%;
+}
+
+.col-4 {
+    margin-top: 2%;
+    margin-right: 10%;
+}
+
+#text-{
+    margin-top: 3%;
+    text-align: justify;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 26px;
+    text-align: justify;
+}
+
+.overlay{
+    width: 50%;
+    height: 40%;
+    background: #6495ED;
+    color: #fff;
+    position: relative;
+    top: -25%;
+    left: 45%;
+}
+
+.lay{
+    font-size: 2rem;
+    position: absolute;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 19%;
+    margin-left: 16%;
+}
+
+
+
+
+
