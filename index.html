@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MERCY HOUSE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css"/>
     <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/3be270cef8.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="assets/Logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="wwa.css">
 </head>
 <body>
@@ -25,7 +26,13 @@
                             <li><a href="ue.html">UPCOMING EVENT</a></li>
                             <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
                         </ul>
-                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <button id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <div id="search-popup" class="search-popup">
+                        <input type="text" placeholder="Search.....">
+                        <button type="button" id="search-button">Find</button>
+                        </div>  
+                                    
                         <i class="fa-solid fa-bars" onclick="openmenu()"></i>
                         <input type="button" value="DONATE" class="btn-1">
                     </div>
@@ -103,7 +110,8 @@
     <div id="key">
         <div class="container">
             <h2 class="subtitle-2">KEY OPERATIONS</h2>
-            <div class="map"><img src="assets/Map.png"></div>
+            <div id="map"></div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
         </div>
     </div>    
 <!--News-->
@@ -197,6 +205,8 @@
             sidemenu.style.right = "-200px"
         }
     </script>
+    <script src="search.js"></script>
+     <script src="map.js"></script>
     <script src="index.js"></script>
 </body>
 </html>

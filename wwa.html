@@ -7,10 +7,9 @@
     <title>WHO ARE WE</title>
     <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/3be270cef8.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="assets/Logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="wwa.css">
     <link rel="stylesheet" href="wwd.css">
-    <link rel="stylesheet" href="ue.css">
 </head>
 <body>
 <!--Header-->
@@ -27,7 +26,13 @@
                     <li><a href="ue.html">UPCOMING EVENT</a></li>
                     <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
-                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <button id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <div id="search-popup" class="search-popup">
+                        <input type="text" placeholder="Search.....">
+                        <button type="button" id="search-button">Find</button>
+                        </div>  
+
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
                 <input type="button" value="DONATE" class="btn-1">
             </div>
@@ -132,5 +137,6 @@
         sidemenu.style.right = "-200px"
     }
 </script>
+<script src="search.js"></script>
 </body>
 </html>
